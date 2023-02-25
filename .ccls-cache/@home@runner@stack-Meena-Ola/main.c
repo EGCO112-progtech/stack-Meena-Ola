@@ -41,15 +41,15 @@ int main(int argc, char **argv){
         }
     }
     if(s.size==0 && flag==0) 
-        printf("argv %d: Correct\n",i);
+        printf("argv %d: correct\n",i);
       else if(s.size>0 && flag==0) {
-        printf("argv %d: Incorrect: too many open parenthesis\n",i);
+        printf("argv %d: incorrect: too many open parenthesis\n",i);
         pop_all(&s);
         }
       else if(s.size==0 && check=='E')
-        printf("argv %d: Incorrect: too many closed parenthesis\n",i);
+        printf("argv %d: incorrect: too many closed parenthesis\n",i);
       else
-        printf("argv %d: Incorrect: mismatch\n",i);
+        printf("argv %d: incorrect: mismatch\n",i);
   }
    return 0;
 }
