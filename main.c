@@ -19,7 +19,11 @@ int main(int argc, char **argv){
   printf("%d\n", pop(&top));
   printf("%d\n", pop(&top));
   */
-  printf("Checking the parentheses in argv arguments\n");
+  //printf("Checking the parentheses in argv arguments\n");
+  if(argc == 1) {
+    printf("There is no input!\n");
+    return 0;
+  }
   for(i=1;i<argc;i++){
   int flag=0;
     for(j=0;j<strlen(argv[i]);j++){
