@@ -33,11 +33,11 @@ char pop(StackPtr s){
   return 'E';
 }
 void pop_all(StackPtr s){
-  printf("Starting pop_all function...\n");
+  //printf("Starting pop_all function...\n");
   while(s->size>0) //s->top
     {
      pop(s);
     }
-  printf("pop_all completed with s->size = %d\n\n",s->size);
+  //printf("pop_all completed with s->size = %d\n\n",s->size);
 }
 #endif
