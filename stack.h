@@ -30,7 +30,7 @@ char pop(StackPtr s){
 	  free (t);
   	return value;
   }
-else return 'E';
+  else return 'E';
 }
 void pop_all(StackPtr s){
   //printf("Starting pop_all function...\n");

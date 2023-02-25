@@ -35,6 +35,10 @@ int main(int argc, char **argv){
         case ']' : check=pop(&s); if(check!='[') flag=1; break;
         default : printf("Incorrect input!"); break;
       }
+      if(j==0 && (argv[i][0]==']' || argv[i][0]=='}')){
+        check='E';
+        break;
+        }
     }
     if(s.size==0 && flag==0) 
         printf("argv %d: Correct\n",i);
